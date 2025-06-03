@@ -1,0 +1,183 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    display: flex; /* To align logo and text */
+    flex-direction: column; /* Stack logo and text on smaller screens */
+    align-items: center; /* Center items horizontally */
+}
+header h1 {
+    margin: 0; /* Remove default margin from h1 inside header */
+    font-size: 2em; /* Default font size for desktop */
+    border-right:70em;
+}
+.search-box {
+    display: 40%;
+    margin-bottom: 15px; /* Space between search box and description */
+}
+
+.search-box input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    flex-grow: 1;
+    
+
+}
+
+.search-box button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-box button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+nav {
+    background-color: #555; /* Add background for navigation */
+    padding: 0.5em 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block; /* Use inline-block for better spacing/alignment */
+    margin: 0 1em;
+    padding: 0.5em 0; /* Add padding for clickable area */
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+nav a:hover {
+    color: #65bae2;
+}
+
+.logo {
+    margin-bottom:-60px; /* Space between logo and heading */
+
+}
+
+.logo img {
+    height:100px; /* Adjust the logo size as needed */
+    border-radius: 50%;
+    margin-right: 70em;
+    margin-bottom: -1em;
+    background: whitesmoke; background-color: #f4f4f4;
+}
+
+header h1 {
+    margin-bottom: 0px;
+    text-align:center; /* Ensure heading is centered */
+}
+
+header p {
+    text-align:center; /* Ensure paragraph is centered */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-card:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay a {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+.style 
+    nav {
+        background-color: rgb(8, 6, 6); /* Add background for navigation */
+        padding: 0.5em 0;
+        border-radius:50%;
+
+    }
+    nav ul {
+        list-style: none;
+        padding: 1em;
+        margin: 0em;
+        text-align: center;
+    }
+    nav ul li {
+        display: inline-block; /* Use inline-block for better spacing/alignment */
+        margin: 0 1em;
+        padding: 0.5em 0; /* Add padding for clickable area */
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease; /* Smooth hover effect */
+    }
+    nav a:hover {
+        color: #65bae2;
+    }
+
+
